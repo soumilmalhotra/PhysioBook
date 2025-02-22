@@ -1,12 +1,17 @@
-import { View, Text } from 'react-native'
+import { View, Text,Image } from 'react-native'
 import React from 'react'
-import { Redirect } from 'expo-router'
+import Header from '../../components/Header'
 
 export default function HomePage() {
   return (
-    <View>
-      <Text>HomePage</Text>
-      <Redirect href={'login'}/>
+    <View
+    style={{
+      paddingTop:35,
+      backgroundColor:'white',
+      height:'100%'
+    }}
+    >
+      <Header/>
     </View>
   )
 }
